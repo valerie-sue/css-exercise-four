@@ -1,4 +1,77 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
   font-size: 10px;
+  font-family: sans-serif;
+  color: #343738;
+}
+
+@font-face {
+font-family: "Roboto";
+src: url("../font");
+}
+
+h1 {
+  font-family: open-sans;
+  font-size:2.5em;
+}
+
+nav {
+  width:100%;
+  padding:1.5em;
+  font-size:2em;
+  text-align: center;
+  font-family: Roboto; sans-serif;
+}
+
+.emphasis {
+  text-transform: uppercase;
+}
+
+.container {
+
+}
+
+.box {
+   float: left;
+   margin: 2% 0;
+   width: 100%;
+   padding: 4%;
+   height: 300px;
+   background-repeat: no-repeat;
+   background-position: left;
+   background-size: cover;
+}
+
+.baku {
+  background-image: url("../images/baku.jpg");
+}
+
+.london {
+  background-image: url("../images/london.png");
+}
+
+.madrid {
+  background-image: url("../images/madrid.jpg");
+}
+
+.rome {
+  background-image: url("../images/rome.jpg");
+}
+
+@media screen and (min-width: 575px){
+   .box {
+    margin: 2%;
+    width: 46%;
+  }
+}
+
+@media screen and (min-width: 991px){
+   .box {
+    margin: 1%;
+    width: 23%;
+  }
 }
